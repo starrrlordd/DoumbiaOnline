@@ -14,22 +14,25 @@
       href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
 
   <body>
     <header>
       <div class="header-container">
         <div class="logo">
-          <!-- <img src="Images/logo7.jpg" alt="Doumbia Online" style="width: 90px; height: 19px;"> -->
           <h1><a href="index.html">Doumbia Online</a></h1>
         </div>
         <nav class="nav-container">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Cart</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a class="nav-link active" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="/shop/shop.html">Shop</a></li>
+            <li><a class="nav-link" href="/login/login.html">Login</a></li>
+            <li><a class="nav-link" href="/cart/cart.html">Cart</a></li>
+            <li><a class="nav-link" href="/contactUs/contactUs.html">Contact Us</a></li>
           </ul>
         </nav>
       </div>
@@ -44,11 +47,16 @@
             </video>
             <div class="overlay"></div>
             <div class="hero-content">
-              <h1><a href="#">Free Deliveries on Weekends</a></h1>
-              <button><a href="#">Discover More</a></button>
+              <h1 class="huge-banner-h1">
+                <a href="#">Free Deliveries on Weekends</a>
+              </h1>
+              <button id="huge-banner-button">
+                <a href="#">Discover More</a>
+              </button>
             </div>
           </div>
         </div>
+
         <div class="banner-container-parent">
           <div class="banner-container">
             <div class="banner1-container">
@@ -61,8 +69,8 @@
                 </div>
                 <div class="overlay"></div>
                 <div class="banner1-content">
-                  <h4>T-Shirts</h4>
-                  <h4>See all</h4>
+                  <h4><a href="#">T-Shirts</a></h4>
+                  <h4><a href="#">See all</a></h4>
                 </div>
               </div>
             </div>
@@ -78,27 +86,112 @@
                 </div>
                 <div class="overlay"></div>
                 <div class="banner1-content">
-                  <h4>Jeans</h4>
-                  <h4>See all</h4>
+                  <h4><a href="#">Jeans</a></h4>
+                  <h4><a href="#">See all</a></h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="leatherBag-container-parent"></div>
+
+        <div class="banner-container-parent new-arrivals-banner">
+          <div class="new-arrivals-content">
+            <a href="#">
+              <h2>Get up to</h2>
+              <h1>30%</h1>
+              <h3>Off</h3>
+              <h4>On</h4>
+              <h2>New arrivals</h2></a
+            >
+          </div>
+        </div>
+
+        <div class="leatherBag-container-parent" style="width: 100%">
+          <div class="leatherBag-image">
+            <img
+              src="images/featuredPro/leatherbag1.jpg"
+              style="width: 100%; height: calc(100vh - 63px)"
+            />
+          </div>
+          <div class="overlay"></div>
+          <div class="leatherBag-content">
+            <h1 class="huge-banner-h1"><a href="#">Leather Bags</a></h1>
+            <button id="huge-banner-button">
+              <a href="#">Discover more</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="seo-banner-parent">
+          <h4>Shop</h4>
+          <div class="seo-banner-content">
+            <ul>
+              <li><a href="#">T-shirts</a></li>
+              <li><a href="#">Shirts</a></li>
+              <li><a href="#">Polos</a></li>
+              <li><a href="#">Sleeveless</a></li>
+              <li><a href="#">Hoodies</a></li>
+              <li><a href="#">Long Sleeves</a></li>
+              <li><a href="#">Cargo Pants</a></li>
+              <li><a href="#">Jeans</a></li>
+              <li><a href="#">Jumpers</a></li>
+              <li><a href="#">Shorts</a></li>
+              <li><a href="#">Jackets</a></li>
+              <li><a href="#">Caps</a></li>
+              <li><a href="#">Shirts</a></li>
+              <li><a href="#">Shirts</a></li>
+              <li><a href="#">Shirts</a></li>
+              <li><a href="#">Shirts</a></li>
+              <li><a href="#">Shirts</a></li>
+            </ul>
+            <button id="arrow-icon">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer class="full-footer">
+      <div class="newsletter-container-parent">
+        <div class="newsletter-container">
+          <h4 class="p1">10% of your next purchase by subscribing to newsletter</h4>
+          <div class="newsletter-form p1">
+            <input id="newsletter-input" type="text" placeholder="E-mail" />
+            <button id="newsletter-button">Sign Up</button>
+          </div>
+          <p class="p1">
+            By Subscribing, you confirm that you have read the
+            <span style="font-weight: bold"><a href="#">privacy policy</a></span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="social-links">
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">x</a></li>
+          <li><a href="#">instagram</a></li>
+          <li><a href="#">tiktok</a></li>
+          <li><a href="#">snapchat</a></li>
+          <li><a href="#">youtube</a></li>
+        </ul>
+      </div>
+      <ul class="navigation-list">
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Terms and conditions</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Delivery information</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">My wishlist</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Track my order</a></li>
+      </ul>
+      <p class="legal-info">
+        ©2025 Doumbia Online All rights reserved
+      </p>
+    </footer>
     <script src="js/index.js"></script>
   </body>
 </html>
-
-<!-- <section id="hero">
-        <video autoplay muted loop playsinline>
-          <source src="Images/heroVideo.mp4" type="video/mp4" />
-        </video>
-        <div class="overlay"></div>
-        <div class="hero-content">
-          <h1><a href="#">Free Deliveries on Weekends</a></h1>
-          <button class="trans-button">Discover more</button>
-        </div>
-      </section> -->
